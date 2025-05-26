@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🐥 Tweety – Mini Twitter Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tweety is a minimalist social media app inspired by X (formerly Twitter). It allows users to create and interact with short posts, follow others, search content, and even engage in real-time chat. Built as a full-stack project, Tweety showcases both frontend and backend integration with modern React tooling and socket-based communication.
 
-## Available Scripts
+🔗 Live: [https://tweety-little-twitter.netlify.app/](https://tweety-little-twitter.netlify.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧩 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ User authentication (signup, login, logout)
+- 📝 Create, edit, and delete posts with support for:
+  - Bold, italic, bullet points, and other basic markdown
+- 👥 Follow / unfollow other users
+- 🧭 Personalized feed based on who you follow
+- 🔍 Search posts (user search coming soon)
+- 🗨️ Basic real-time chat between online users (powered by sockets)
+- 🧑‍💻 User dashboard: view your own posts, followers, and following list
+- 💻 Responsive UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚛️ React (via Create React App)
+- 🎨 Tailwind CSS for styling
+- 🔗 React Router for navigation
+- 📝 React Markdown for rich post formatting
+- 📦 Immer & useImmer for state management
+- 🌐 Axios for API requests
+- 💬 Socket.io-client for real-time chat
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation (for development)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> You only need this section if you're cloning the project and running it locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/tweety.git
+cd tweety
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Create a `.env` file in the root directory with your backend URL:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+REACT_APP_API_URL=https://tweety-backend-1o5v.onrender.com
+```
 
-## Learn More
+### 4. Start development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Note: You must have the backend running or deployed for full functionality.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Deployment
 
-### Analyzing the Bundle Size
+The project is deployed on Netlify:  
+[https://tweety-little-twitter.netlify.app](https://tweety-little-twitter.netlify.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The backend is hosted separately on Render:  
+[https://tweety-backend-1o5v.onrender.com](https://tweety-backend-1o5v.onrender.com)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ✨ Future Improvements
 
-### Advanced Configuration
+### 🔧 Short-Term Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- ⏳ Emoji reactions (❤️ 😂 😮 etc.) for posts
+- 🔍 Search for users (currently only post search is implemented)
+- 📝 Improved markdown editor with preview
 
-### Deployment
+### 🚀 Long-Term Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- 💬 Fully featured chat system:
+  - History of conversations
+  - One-on-one messaging
+  - Group messaging
+- 🤝 Smart user suggestions (who to follow)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is open source and free to use. No license currently applied.
