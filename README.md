@@ -20,7 +20,7 @@ Tweety is a minimalist social media app inspired by X (formerly Twitter). It all
 
 ---
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - ⚛️ React (via Create React App)
 - 🎨 Tailwind CSS for styling
